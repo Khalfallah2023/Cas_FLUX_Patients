@@ -754,9 +754,8 @@ const PatientFlowVisualization = () => {
               <div className="text-xs opacity-90 mt-1">= {(patientData.total_duration_minutes / 60).toFixed(2)} heures</div>
             </div>
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur">
-              <div className="font-semibold mb-2 text-sm md:text-base">Q5 - Distance parcourue</div>
+              <div className="font-semibold mb-2 text-sm md:text-base">Distance parcourue</div>
               <div className="text-2xl md:text-3xl font-bold">{totalDistance} m</div>
-              <div className="text-xs opacity-90 mt-1">Sur maillage des déplacements réels</div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -795,7 +794,7 @@ const PatientFlowVisualization = () => {
               </div>
             </div>
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur">
-              <div className="font-semibold mb-2 text-sm">Q5 - Maillage et Distance</div>
+              <div className="font-semibold mb-2 text-sm">Maillage </div>
               <div className="text-xs space-y-1">
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
@@ -805,20 +804,12 @@ const PatientFlowVisualization = () => {
                   <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
                   <span>Réseau basé sur plan réel</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
-                  <span>Distance: {totalDistance} mètres</span>
-                </div>
+                
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-6 text-center text-gray-500 text-sm">
-          <p className="font-semibold">Étude de cas - IMT Mines Albi - Centre de Génie Industriel</p>
-          <p className="mt-1">Données du 12/11/2015 • Service Urologie • Test recrutement stage</p>
-          <p className="mt-1 text-xs">Positions et maillage basés sur le plan architectural réel fourni</p>
-        </div>
       </div>
     </div>
   );
