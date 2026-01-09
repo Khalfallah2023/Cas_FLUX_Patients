@@ -500,7 +500,6 @@ const PatientFlowVisualization = () => {
               </div>
             </div>
             <div className="text-right">
-              <div className="text-sm text-gray-600">Date: 12/11/2015</div>
               <div className="text-lg font-semibold text-blue-600">Questions 3-4-5</div>
             </div>
           </div>
