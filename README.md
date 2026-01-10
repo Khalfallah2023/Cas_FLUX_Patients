@@ -73,35 +73,6 @@ L'application répond à plusieurs questions d'analyse :
 - Cliquez sur une étape dans la chronologie pour y accéder directement
 - Barre de progression interactive
 
-## 🏗️ Architecture du Code
-
-### Structure Principale
-
-```javascript
-PatientFlowVisualization
-├── État (useState)
-│   ├── currentStep : étape actuelle
-│   ├── isPlaying : état de l'animation
-│   ├── viewMode : 'graph' | 'architectural' | 'path'
-│   ├── nodePositions : positions des nœuds
-│   └── zoom/pan : navigation
-│
-├── Données
-│   ├── patientData : 18 nœuds avec timestamps
-│   ├── roomLayout : plan architectural (18 salles)
-│   └── corridorNetwork : réseau de couloirs
-│
-├── Algorithmes
-│   ├── findPathOnGrid() : pathfinding sur maillage
-│   ├── calculateTotalDistance() : calcul distance
-│   └── Rendu canvas avec ctx.arc/lineTo
-│
-└── UI Components
-    ├── En-tête avec métriques
-    ├── Canvas interactif
-    ├── Panneau détails étape
-    └── Chronologie complète
-```
 
 ### Composants Clés
 
